@@ -1,0 +1,322 @@
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    color: #4E6C50;
+}
+
+#main span{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#scrollToTopButton{
+    width: 120px;
+    height: 30px;
+}
+
+
+/* Images */
+.logo{
+    height: 150px;
+    width: 150px;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.front-photo img{
+    height: 400px;
+    width: 350px;
+    padding-left: 50px;
+    margin-top: 30px;
+    
+}
+
+.image12{
+    height: 527.66px;
+    width: 351.77px;
+    margin-right: 30px;
+    float: right;
+}
+
+.front-photo{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.scrollImage{
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
+
+/* End of Images */
+
+
+/* SideBar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4E6C50;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sidenav .closebtn{
+    font-size: 36px;
+    border-bottom: none;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 5px;
+}
+
+.sidenav ul {
+    clear: both;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidenav ul li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid grey;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sidenav ul li :hover{
+    background: grey;
+}
+
+.contact{
+    padding: 120px 0 0 0;
+    text-align: center;
+}
+
+.contact a{
+    color: #fff;
+    margin: 10px;
+}
+
+.contact a :hover{
+    color: grey;
+}
+
+/* End of Sidebar */
+
+/* Main Page */
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 150px;
+    width: 700px;
+    margin: auto;
+    color: #4E6C50;
+    
+}
+
+.para{
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.front-photo{
+    text-align: center;
+}
+
+.button{
+    margin: 10px 10px 10px 0;
+    border-radius: 5px;
+    border: solid 5px #4E6C50;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button :hover{
+    color: black;
+}
+
+#second-container{
+    margin-top: 20px;
+    height: 550px;
+}
+
+#innerDiv{
+    width: 380px;
+    margin-left: 10px;
+}
+
+.innerText{
+    width: 350px;
+}
+
+#lastContainer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.openingHourContainer ul{
+    /* justify-content: space-between; */
+    margin: 0;
+    padding: 0;
+}
+
+#lastContainer{
+    width: 100%;
+    height: 170px;
+}
+.locationHeading{
+    float: right;
+    font-size: 15px;
+}
+
+.openingHour, #lastContainer h3{
+    width: 200px;
+}
+
+.openingHourContainer li{
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+/* End of Main Page */
+
+/* Barber Page */
+
+.scrollButton{
+    float: left;
+}
+
+/* Our Barber List */
+
+#arrayList{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    margin: 0;
+    padding-right: 100px;
+    height: 280px;
+}
+
+#arrayList ul{
+    list-style-type: none;
+    height: 250px;
+}
+
+#arrayList ul li{
+    height: 50px;
+}
+
+#arrayList ul li img{
+    width: 200px;
+    height: 200px;
+    /* float: left; */
+    /* border: solid #4E6C50 5px; */
+}
+
+
+.barberPara{
+    font-size: 15px;
+    margin-top: 150px;
+}
+
+.barber-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+
+}
+
+.empty{
+    height: 30px;
+}
+
+
+/* Our Barber List  */
+
+/* Scroll container */
+
+#scrollContainer {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #scrollContent {
+    display: flex;
+    animation: scrollAnimation 10s linear infinite;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  /* Our Stores Page */
+#products{
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+    /* CSS styles for screens up to 768px width */
+    #products {
+      display: unset;
+    }
+    .pomadeName{
+        text-align: center;
+        font-size: 15px;
+    }
+    .productsDiv{
+        justify-content: center;
+        align-items: center;
+    }
+    .pomadeImage{
+        margin-left: 240px;
+    }
+  } 
+  
+
+  
+
+.pomadeName{
+    /* width: 200px;
+    height: 20px; */
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.pomadeImage{
+    width: 200px;
+    height: 300px;
+  }
+
+.pomadePrice{
+    text-align: center;
+}
+
+#products ul {
+   list-style-type: none;
+ }
